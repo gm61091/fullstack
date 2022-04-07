@@ -1,0 +1,182 @@
+foodItems[{
+    name: "Caeser Salad",
+    type: "Salad",
+    price: "15.49",
+    description: "Large, fresh Romaine, croutons and parmesan cheese served with a side of our caesar dressing",
+    imgurl:""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
+foodItems[{
+    name: "",
+    type: "",
+    price: "",
+    description: "",
+    img: ""
+}]
