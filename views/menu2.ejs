@@ -171,67 +171,29 @@
 							<div class="row gutters">
 							<div class="col col-6">
 								<ul class="vincent_menu2_2_block_item">
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Pepperoni</span></h5>
-											<div class="vincent_prod_list_price">$2.90</div>
-											<p class="vincent_prod_list_text">Gorgonzola, ricotta, mozzarella, taleggio</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Carbonara</span></h5>
-											<div class="vincent_prod_list_price">$3.80</div>
-											<p class="vincent_prod_list_text">Salmon, walnut pesto</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Prosciutto</span></h5>
-											<div class="vincent_prod_list_price">$3.50</div>
-											<p class="vincent_prod_list_text">Baby spinach, smoked leg ham, olives, mozzarella, ect</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Calzone</span></h5>
-											<div class="vincent_prod_list_price">$2.60</div>
-											<p class="vincent_prod_list_text">Classic marinara sauce, authentic old-world pepperoni</p>
-										</a>
-									</li>
+									<% for( let index = 0; index < 4; index++ ) { %>
+										<li class="vincent_prod_list_cont">
+											<a href="/product/<%= pizzaArr[index].dataValues.id %>">
+												<h5 class="vincent_prod_list_title"><span><%= pizzaArr[index].dataValues.name %> </span></h5>
+												<div class="vincent_prod_list_price"><%= pizzaArr[index].dataValues.price %></div>
+												<p class="vincent_prod_list_text"><%= pizzaArr[index].dataValues.description %></p>
+											</a>
+										</li>
+									<% } %>
 								</ul>
 							</div>
 							<div class="col col-6">
 								<ul class="vincent_menu2_2_block_item">
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Diablo</span></h5>
-											<div class="vincent_prod_list_price">$3.50</div>
-											<p class="vincent_prod_list_text">Marinated cherry tomatoes</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Capricciosa</span></h5>
-											<div class="vincent_prod_list_price">$2.90</div>
-											<p class="vincent_prod_list_text">Lots of pepperoni & mozzarella</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Saporita</span></h5>
-											<div class="vincent_prod_list_price">$2.60</div>
-											<p class="vincent_prod_list_text">Ground beef, Italian sausage, jalapenos, pepperoni, fresh tomato, etc</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Neapolitano</span></h5>
-											<div class="vincent_prod_list_price">$3.80</div>
-											<p class="vincent_prod_list_text">Red onions, basil, capers, olives, tuna</p>
-										</a>
-									</li>
-								</ul>	
+									<% for( let index = 4; index < 8; index++ ) { %>
+										<li class="vincent_prod_list_cont">
+											<a href="/product/<%= pizzaArr[index].dataValues.id %>">
+												<h5 class="vincent_prod_list_title"><span><%= pizzaArr[index].dataValues.name %> </span></h5>
+												<div class="vincent_prod_list_price"><%= pizzaArr[index].dataValues.price %></div>
+												<p class="vincent_prod_list_text"><%= pizzaArr[index].dataValues.description %></p>
+											</a>
+										</li>
+									<% } %>
+								</ul>
 							</div>
 							</div>
 						</div>
@@ -284,67 +246,29 @@
 							<div class="row gutters">
 							<div class="col col-6">
 								<ul class="vincent_menu2_2_block_item">
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Insalata di carciofi</span></h5>
-											<div class="vincent_prod_list_price">$2.90</div>
-											<p class="vincent_prod_list_text">Classic marinara sauce, authentic old-world pepperoni</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Insalata mari e monti</span></h5>
-											<div class="vincent_prod_list_price">$2.60</div>
-											<p class="vincent_prod_list_text">Gorgonzola, ricotta, mozzarella, taleggio</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Insalata mista</span></h5>
-											<div class="vincent_prod_list_price">$2.90</div>
-											<p class="vincent_prod_list_text">Salmon, walnut pesto</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Insalata capricciosa</span></h5>
-											<div class="vincent_prod_list_price">$2.60</div>
-											<p class="vincent_prod_list_text">Tomatoes, bacon, onion</p>
-										</a>
-									</li>
+									<% for( let index = 0; index < 2; index++ ) { %>
+										<li class="vincent_prod_list_cont">
+											<a href="/product/<%= saladArr[index].dataValues.id %>">
+												<h5 class="vincent_prod_list_title"><span><%= saladArr[index].dataValues.name %> </span></h5>
+												<div class="vincent_prod_list_price"><%= saladArr[index].dataValues.price %></div>
+												<p class="vincent_prod_list_text"><%= saladArr[index].dataValues.description %></p>
+											</a>
+										</li>
+									<% } %>
 								</ul>
 							</div>
 							<div class="col col-6">
 								<ul class="vincent_menu2_2_block_item">
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Insalata di riso</span></h5>
-											<div class="vincent_prod_list_price">$3.50</div>
-											<p class="vincent_prod_list_text">Red onions, basil, capers, olives, tuna</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Panzanella</span></h5>
-											<div class="vincent_prod_list_price">$3.80</div>
-											<p class="vincent_prod_list_text">Marinated cherry tomatoes</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Insalata caprese</span></h5>
-											<div class="vincent_prod_list_price">$3.50</div>
-											<p class="vincent_prod_list_text">Lots of pepperoni & mozzarella</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Polpo all insalata</span></h5>
-											<div class="vincent_prod_list_price">$3.80</div>
-											<p class="vincent_prod_list_text">Baby spinach, smoked leg ham, olives, mozzarella, ect</p>
-										</a>
-									</li>
-								</ul>	
+									<% for( let index = 2; index < 4; index++ ) { %>
+										<li class="vincent_prod_list_cont">
+											<a href="/product/<%= saladArr[index].dataValues.id %>">
+												<h5 class="vincent_prod_list_title"><span><%= saladArr[index].dataValues.name %> </span></h5>
+												<div class="vincent_prod_list_price"><%= saladArr[index].dataValues.price %></div>
+												<p class="vincent_prod_list_text"><%= saladArr[index].dataValues.description %></p>
+											</a>
+										</li>
+									<% } %>
+								</ul>
 							</div>
 							</div>
 						</div>
@@ -397,67 +321,29 @@
 							<div class="row gutters">
 							<div class="col col-6">
 								<ul class="vincent_menu2_2_block_item">
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Casunziei</span></h5>
-											<div class="vincent_prod_list_price">$2.90</div>
-											<p class="vincent_prod_list_text">Classic marinara sauce, authentic old-world pepperoni</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Fusilli</span></h5>
-											<div class="vincent_prod_list_price">$2.60</div>
-											<p class="vincent_prod_list_text">Gorgonzola, ricotta, mozzarella, taleggio</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Culingionis</span></h5>
-											<div class="vincent_prod_list_price">$2.90</div>
-											<p class="vincent_prod_list_text">Salmon, walnut pesto</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Lasagne</span></h5>
-											<div class="vincent_prod_list_price">$2.60</div>
-											<p class="vincent_prod_list_text">Tomatoes, bacon, onion</p>
-										</a>
-									</li>
+									<% for( let index = 0; index < 4; index++ ) { %>
+										<li class="vincent_prod_list_cont">
+											<a href="/product/<%= pastaArr[index].dataValues.id %>">
+												<h5 class="vincent_prod_list_title"><span><%= pastaArr[index].dataValues.name %> </span></h5>
+												<div class="vincent_prod_list_price"><%= pastaArr[index].dataValues.price %></div>
+												<p class="vincent_prod_list_text"><%= pastaArr[index].dataValues.description %></p>
+											</a>
+										</li>
+									<% } %>
 								</ul>
 							</div>
 							<div class="col col-6">
 								<ul class="vincent_menu2_2_block_item">
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Farfalle</span></h5>
-											<div class="vincent_prod_list_price">$3.50</div>
-											<p class="vincent_prod_list_text">Red onions, basil, capers, olives, tuna</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Gnocchi</span></h5>
-											<div class="vincent_prod_list_price">$3.80</div>
-											<p class="vincent_prod_list_text">Marinated cherry tomatoes</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Fettuccine</span></h5>
-											<div class="vincent_prod_list_price">$3.50</div>
-											<p class="vincent_prod_list_text">Lots of pepperoni & mozzarella</p>
-										</a>
-									</li>
-									<li class="vincent_prod_list_cont">
-										<a href="/product">
-											<h5 class="vincent_prod_list_title"><span>Strangolapretti</span></h5>
-											<div class="vincent_prod_list_price">$3.80</div>
-											<p class="vincent_prod_list_text">Baby spinach, smoked leg ham, olives, mozzarella, ect</p>
-										</a>
-									</li>
-								</ul>	
+									<% for( let index = 4; index < 8; index++ ) { %>
+										<li class="vincent_prod_list_cont">
+											<a href="/product/<%= pastaArr[index].dataValues.id %>">
+												<h5 class="vincent_prod_list_title"><span><%= pastaArr[index].dataValues.name %> </span></h5>
+												<div class="vincent_prod_list_price"><%= pastaArr[index].dataValues.price %></div>
+												<p class="vincent_prod_list_text"><%= pastaArr[index].dataValues.description %></p>
+											</a>
+										</li>
+									<% } %>
+								</ul>
 							</div>
 							</div>
 						</div>
