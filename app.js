@@ -13,6 +13,10 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
+
+
+
+
 //routes
 app.use(require('./routes/index'));
 app.use(require('./routes/about1'));
@@ -24,6 +28,8 @@ app.use(require('./routes/product'));
 app.use(require('./routes/single-product'));
 app.use(require('./routes/checkout'));
 app.use(require('./routes/contact-w-sidebar'));
+app.use(require('./routes/register'));
+app.use(require('./routes/login'));
 
 
 
