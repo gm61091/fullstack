@@ -24,6 +24,8 @@ app.use(require('./routes/product'));
 app.use(require('./routes/single-product'));
 app.use(require('./routes/checkout'));
 app.use(require('./routes/contact-w-sidebar'));
+app.use(require('./routes/register'));
+app.use(require('./routes/login'));
 
 
 
