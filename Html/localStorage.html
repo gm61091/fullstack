@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    local storage 
+
+
+    <script>
+
+        localStorage.cohort2022 = "Februrary"
+
+        localStorage.setItem('2022', 'cohort')
+
+        console.log(localStorage.cohort2022)
+
+        console.log(localStorage["2022"])
+
+        localStorage.clear()
+
+        console.log(localStorage.cohort2022)
+
+        let arr = [1, 2, 3, 4]
+
+        localStorage.array = JSON.stringify(arr)  //converst object to JSON string
+
+        console.log(localStorage.array)
+
+        console.log(typeof(localStorage.array))
+
+        arr = JSON.parse(localStorage.array)  //convert JSON string to JS object
+
+        console.log(arr)
+
+    </script>
+</body>
+</html>
