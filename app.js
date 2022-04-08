@@ -13,6 +13,10 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
+
+
+
+
 //routes
 app.use(require('./routes/index'));
 app.use(require('./routes/about1'));
