@@ -3881,7 +3881,12 @@ tfoot td{
      border-radius: 0;
      display: inline-block;
      min-height: 33px;
+
 }
+.roundedImg{
+     border-radius: 50%;
+}
+
 /* Responsive */
  @media only screen and (max-width: 1600px) {
 }

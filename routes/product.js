@@ -9,16 +9,20 @@ const db = require('../models');
 
 // localhost:3000/product/12
 
-router.get("/product/:ID", async (req, res) => {
+// router.get("/product", (req, res)=>{
+//     res.render("product")
+// })
+
+router.get("/product:ID", async (req, res) => {
     try {
 
-        let dataID = req.params.ID;
+        let dataID = req.params.ID;   //grabbing ID off URL
         // console.log(dataID);
 
         let results = await db.products.findByPk(dataID)
         console.log(results);
         
-        res.render("product", {
+        res.render("product.ejs", {
         
             results: results, 
 
