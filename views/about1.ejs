@@ -358,5 +358,38 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.data-parallax.min.js"></script>
 	<script src="js/index.js"></script>
+	<script>
+		// <div class="vincent_total_price">$0.00</div>
+		// <div class="vincent_total_items">0 items - View Cart</div>
+		// <div class="vincent_cart_item_counter">0</div>
+
+		// first get total price from local storage
+		let totalPrice = parseFloat(localStorage.orderPrice).toFixed(2)
+		//get price node from dom 
+		let cartImgPrice = document.querySelector(".vincent_total_price")
+		
+
+		//set inner text of price node to total price
+		cartImgPrice.innerText = "$" + totalPrice
+		
+
+		
+			//THIS IS ITEM CART NODE DATA POPULATION CODES
+		let orderArr = JSON.parse(localStorage.orderArr)
+		
+		//get item count node from dom 
+		let itemCount = document.querySelector(".vincent_total_items")
+
+		//get other node to populate cart image number to reflect dynamic data entry
+		let cartImgNum = document.querySelector(".vincent_cart_item_counter")
+
+		//set inner text of itemCound node to length of orderArr with additional text
+		itemCount.innerText = `${orderArr.length} items - View Cart`
+
+		cartImgNum.innerText = orderArr.length
+
+		
+		
+	</script>
 </body>
 </html>
