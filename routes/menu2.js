@@ -13,7 +13,7 @@ router.get("/menu2", async (req, res) => {
 
         let salad = await findAll("salad")
 
-        res.render("menu2", {
+        res.render("menu2.ejs", {
             pizzaArr: pizza, 
             pastaArr:pasta,
             saladArr:salad
