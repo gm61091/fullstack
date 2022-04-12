@@ -135,11 +135,29 @@
 			<h1>Register</h1>
 		</div>
 	</div>
+<form action="/register" method="POST">
+    <div class="col col-4 offset-4">
+        <div class="form-floating mb-3 ">
+            <label for="floatingInput">First name</label>
+            <input type="text" class="form-control" name="firstName" id="floatingInput" placeholder="john">
+            <br>
+            
 
+            <!-- <label for="floatingInput">Email address</label> -->
+          </div>
+    <div class="col col-4 offset-4">
+        <div class="form-floating mb-3 ">
+            <label for="floatingInput">Last name</label>
+            <input type="text" class="form-control" name="lastName" id="floatingInput" placeholder="smith">
+            <br>
+            
+
+            <!-- <label for="floatingInput">Email address</label> -->
+          </div>
     <div class="col col-4 offset-4">
         <div class="form-floating mb-3 ">
             <label for="floatingInput">Email address</label>
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
             <br>
             
 
@@ -147,16 +165,19 @@
           </div>
           <div class="form-floating">
             <label for="floatingPassword">Password</label>
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
             <!-- <label for="floatingPassword">Password</label> -->
           </div>
           <br>
           <br>
 
-          <div class="offset-4"><button>Register</button></div>
+          <div class="offset-4" id="registerButton"><button>Register</button></div>
           <br>
           <br>
     </div>
+</form>
+
+<div class="text-danger"><%= error %> </div>
 	<!-- <div class="vincent_container vincent_typography">
 		<div class="row gutters">
 			<div class="col col-12 vincent_content">
