@@ -3,11 +3,26 @@
 
 const express = require('express');
 const app = express();
+const helmet = require('helmet');
+const passport = require('passport');
+const cookieSession = require('cookie-session');
+
+require('./auth/passport')(passport);
+
 
 const port = 3009;
 app.use(express.static('public'));
+app.use(helmet())
 
 app.set('view engine', 'ejs');
+app.use(cookieSession({
+    name: 'session',
+    keys: ['randomkeys'],
+    maxAge: 14 * 24 * 60 * 1000
+}))
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 //body parser to scrape info from header
 app.use(express.urlencoded({extended: false}));
